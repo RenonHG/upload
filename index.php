@@ -16,6 +16,7 @@
         <tr>
             <th>Nome</th>
             <th>Foto</th>
+            <th>Ações</th>
         </tr>
         <tr>
 
@@ -29,6 +30,7 @@
                     echo "<tr>";
                     echo "<td>". $dados['nome']. "</td>";
                     echo "<td><img src='". $dados['foto'] . "' width=100></td>";
+                    echo "<td><a href='form-editar.php?id=".$dados['id']."'>Editar</a></td>";
                     "</tr>";
                  } 
 

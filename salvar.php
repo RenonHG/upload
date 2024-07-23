@@ -21,10 +21,10 @@ $script = "INSERT INTO foto(nome, foto) VALUES ('$nome', '$nomeCaminhoDaFoto')";
 
 $resultado = $conn->query($script)->fetch();
 
-return $resultado;
 
+header("location:index.php");
+return $resultado;
 $conn = null;
 
-header('index.php');
 
 ?>
